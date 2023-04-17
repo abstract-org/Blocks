@@ -7,7 +7,7 @@ import Highlight from '@tiptap/extension-highlight';
 import Image from '@tiptap/extension-image';
 import CodeBlockLowlight from '@tiptap/extension-code-block-lowlight';
 import Placeholder from '@tiptap/extension-placeholder';
-import lowlight from 'lowlight';
+import { lowlight } from 'lowlight';
 import Link from '@tiptap/extension-link';
 import Menu from './Menu';
 import { Exts } from './Exts';
