@@ -1,10 +1,18 @@
 {
-  "name": "@daniely/blocks",
+  "name": "@abstract-org/blocks",
   "description": "Modular Blocks Editor",
   "author": "Daniel Yogel",
   "version": "0.4.2",
   "license": "MIT",
-  "repository": "https://github.com/danielyogel/Blocks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abstract-org/Blocks.git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "main": "./dist/blocks.cjs.js",
   "module": "./dist/blocks.es.js",
   "exports": {
@@ -27,10 +35,11 @@
     "ladle": "npx ladle serve",
     "ladle:build": "npx ladle build --out dist-ladle",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "semantic-release": "semantic-release --branches main"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   },
   "prettier": {
     "useTabs": false,
@@ -91,6 +100,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "semantic-release": "^21.0.1",
     "ts-toolbelt": "9.6.0",
     "tslib": "^2.5.0",
     "type-fest": "^3.6.1",
